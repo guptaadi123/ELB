@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "startprod": "node ./bin/client",
-    "dev": "nodemon ./bin/dev",
-    "start": "node ./bin/staging",
-    "client": "node ./bin/client"
+    
+  
+    "clienttest": "node ./bin/staging"
+    
   },
   "dependencies": {
     "axios": "^0.21.1",

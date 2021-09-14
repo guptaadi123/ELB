@@ -6,7 +6,7 @@
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://dekho2k:dekho2k@ediclient.chkng.mongodb.net/expo?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://expobaz:Dekho@2k@cluster-expo.adotz.mongodb.net/expo?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
