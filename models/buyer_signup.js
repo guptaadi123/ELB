@@ -1,0 +1,30 @@
+const mongoose = require('mongoose');
+const schema = new mongoose.Schema({
+    firstName: String,
+    lastName: String,
+    password: String,
+    mobile: String,
+    emailID: String,
+    registeredBusinessName: String,
+    businessPhone: String,
+    streetNumber: String,
+    suiteUnit: String,
+    zipCode: String,
+    country: String,
+    city: String,
+    state: String,
+    businessType: String,
+    bus_entity_type_other: String,
+    businessCreditCard: String,
+    nameOnCard: String,
+    validCardNumber: String,
+    expirationMonth: Number,
+    expirationYear: Number,
+    cvv: String,
+    businessTaxID: String,
+    buyer_status: String,
+    deleted: String,
+    deletedby: { type: mongoose.Schema.Types.ObjectId, ref: "individual" },
+}, { timestamps: true });
+module.exports = mongoose.model('buyer_signup', schema);
+

@@ -1,0 +1,55 @@
+const mongoose = require('mongoose')
+
+const schema = new mongoose.Schema({
+    storename: String,
+    brandName: String,
+    descreption: String,
+    gst_updt_type: String, //(exempt,provided)
+    bus_entity_type: String,
+    bus_entity_type_other: String,
+    bus_ownership: String,
+    bus_name: String,
+    turnover_y1: String,
+    turnover_y2: String,
+    turnover_y3: String,
+    sell_othr_site: Boolean,
+    sell_othr_site_dtl: String,
+    bus_listing_status: String,
+    bus_pause: String,
+    bus_stop: String,
+    craft_name: String,
+
+    customOrder: String,
+    hsnCode: String,
+    sellOnEb: String,
+    trademark: String,
+    fax: String,
+
+    vendor_profile: String,
+    export_compliance: String,
+
+    craft_desc: String,
+    status: String,
+    create_user: Number,
+    editedby: Number,
+    deleted: String,
+    city_id: Number,
+    state_id: Number,
+    custome_order_flag: String,
+    hsn_code_flag: String,
+    manufacturer_flag: String,
+    trademark_flag: String,
+    add_notification : String,
+    update_notification : String,
+    delete_notification : String,
+    approve_notification : String,
+    reject_notification : String,
+    pref_comm_sms : String,
+    pref_comm_email : String,
+    pref_comm_notification : String,
+    mediaid: { type: mongoose.Schema.Types.ObjectId, ref: "media" },
+    deletedby: { type: mongoose.Schema.Types.ObjectId, ref: "individual" },
+    individual: { type: mongoose.Schema.Types.ObjectId, ref: "individual" },
+
+}, { timestamps: true })
+module.exports = mongoose.model('bussiness', schema)
