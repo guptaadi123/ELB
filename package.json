@@ -5,7 +5,7 @@
   "scripts": {
     
   
-    "clienttest": "node ./bin/staging"
+    "start": "node ./bin/staging"
     
   },
   "dependencies": {
